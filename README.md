@@ -1,4 +1,4 @@
-# Deblur-GS
+# Deblur-GS: 3D Gaussian Splatting from Camera Motion Blurred Images
 Official  implementation of paper "Deblur-GS: 3D Gaussian Splatting from Camera Motion Blurred Images", I3D 2024
 
 >Deblur-GS: 3D Gaussian Splatting from Camera Motion Blurred Images
@@ -8,6 +8,8 @@ Official  implementation of paper "Deblur-GS: 3D Gaussian Splatting from Camera 
 >I3D 2024
 >
 >[project page] [paper] [dataset]
+
+![teaser](asset/teaser.png)
 
 ## Abstract
 
