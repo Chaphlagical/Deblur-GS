@@ -13,7 +13,9 @@ dependencies:
   - torchvision=0.13.1
   - tqdm
   - timm
+  - torchmetrics
   - pip:
     - submodule/diff-gaussian-rasterization
     - submodule/knn
+    - submodule/pytorch3d
     - opencv-python

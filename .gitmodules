@@ -4,3 +4,6 @@
 [submodule "submodule/diff-gaussian-rasterization"]
 	path = submodule/diff-gaussian-rasterization
 	url = https://github.com/Chaphlagical/diff-gaussian-rasterization
+[submodule "submodule/pytorch3d"]
+	path = submodule/pytorch3d
+	url = https://github.com/facebookresearch/pytorch3d

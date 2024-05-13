@@ -130,31 +130,30 @@ def build_scaling_rotation(s, r):
     L = R @ L
     return L
 
-
-@torch.no_grad
 def visualize_depth(depth, minmax=None, cmap=cv2.COLORMAP_TURBO):
     """
     depth: (H, W)
     """
-    if len(depth.shape) == 3:
-        depth = depth.squeeze(0)
+    with torch.no_grad():
+        if len(depth.shape) == 3:
+            depth = depth.squeeze(0)
 
-    if type(depth) is not np.ndarray:
-        depth = depth.cpu().numpy()
+        if type(depth) is not np.ndarray:
+            depth = depth.cpu().numpy()
 
-    x = np.nan_to_num(depth)  # change nan to 0
-    if minmax is None:
-        # get minimum positive depth (ignore background)
-        mi = np.min(x)
-        ma = np.max(x)
-    else:
-        mi, ma = minmax
+        x = np.nan_to_num(depth)  # change nan to 0
+        if minmax is None:
+            # get minimum positive depth (ignore background)
+            mi = np.min(x)
+            ma = np.max(x)
+        else:
+            mi, ma = minmax
 
-    x = (x - mi) / (ma - mi + 1e-8)  # normalize to 0~1
-    x = (255 * x).astype(np.uint8)
-    x = Image.fromarray(cv2.applyColorMap(x, cmap))
-    x = T.ToTensor()(x)  # (3, H, W)
-    return x
+        x = (x - mi) / (ma - mi + 1e-8)  # normalize to 0~1
+        x = (255 * x).astype(np.uint8)
+        x = Image.fromarray(cv2.applyColorMap(x, cmap))
+        x = T.ToTensor()(x)  # (3, H, W)
+        return x
 
 
 def check_socket_open(hostname, port):
