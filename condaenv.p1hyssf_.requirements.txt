@@ -1,3 +1,0 @@
-submodule/diff-gaussian-rasterization
-submodule/knn
-opencv-python
