@@ -1,4 +1,4 @@
-name: motion_3dgs
+name: deblur_gs
 channels:
   - pytorch
   - conda-forge
