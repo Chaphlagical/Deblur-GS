@@ -14,6 +14,6 @@ dependencies:
   - tqdm
   - timm
   - pip:
-    - submodules/diff-gaussian-rasterization
-    - submodules/simple-knn
+    - submodule/diff-gaussian-rasterization
+    - submodule/knn
     - opencv-python
