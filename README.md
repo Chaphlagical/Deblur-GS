@@ -7,7 +7,7 @@ Official  implementation of paper "Deblur-GS: 3D Gaussian Splatting from Camera 
 >
 >I3D 2024
 >
->[project page](https://chaphlagical.icu/Deblur-GS/) [paper](http://doi.acm.org/10.1145/3651301) [dataset](https://drive.google.com/drive/folders/1zTLW9kPe8lVgl8U2RkSHI4Tm5HyuCAon)
+>[project page](https://chaphlagical.icu/Deblur-GS/) [paper](http://doi.acm.org/10.1145/3651301) [dataset](https://drive.google.com/drive/folders/1d8hAA-Wi3UoInQZCv-wc4A2efjuopqsQ?usp=sharing)
 
 ![teaser](asset/teaser.png)
 
