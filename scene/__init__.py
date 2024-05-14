@@ -81,8 +81,9 @@ class Scene:
 
         self.cameras_extent = scene_info.nerf_normalization["radius"]
 
-        midas = torch.hub.load(
-            "/home/cwb/.cache/torch/hub/intel-isl_MiDaS_master", "DPT_Hybrid", source="local")
+        # midas = torch.hub.load(
+        #     "/home/cwb/.cache/torch/hub/intel-isl_MiDaS_master", "DPT_Hybrid", source="local")
+        midas = torch.hub.load("intel-isl/MiDaS", "DPT_Hybrid")
         midas.cuda()
         midas.eval()
         for param in midas.parameters():
