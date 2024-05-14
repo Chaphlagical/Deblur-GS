@@ -28,7 +28,7 @@ conda activate deblur_gs
 ### Training
 
 ```shell
-python train.py -s <path to dataset> --eval # Train with train/test split
+python train.py -s <path to dataset> --eval --deblur # Train with train/test split
 ```
 
 Additional Command Line Arguments for `train.py`
