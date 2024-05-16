@@ -173,7 +173,7 @@ class Camera(nn.Module):
         #     self.pose_0, self.pose_1, self.pose_2, self.pose_3, interp_alpha)
         return Pose().compose([pose_refine, self.pose])
 
-    @torch.no_grad
+    @torch.no_grad()
     def get_test_pose(self):
         pose_refine = interpolation_linear(
             self.pose_0, self.pose_1, 0.5)
